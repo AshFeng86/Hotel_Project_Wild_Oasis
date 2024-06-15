@@ -1,9 +1,7 @@
 "use client";
-
 import { differenceInDays } from "date-fns";
 import { useReservation } from "./ReservationContext";
 import { createBooking } from "../_lib/actions";
-import { useFormStatus } from "react-dom";
 import SubmitButton from "./SubmitButton";
 
 function ReservationForm({ cabin, user }) {
