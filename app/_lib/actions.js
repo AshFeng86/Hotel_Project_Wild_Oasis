@@ -42,7 +42,6 @@ export async function signOutAction() {
 
 // Creating a New Reservation
 export async function createBooking(bookingData, formData) {
-  console.log(formData);
   const session = await auth();
   // Working on Backend: We need to always treat all the inputs as unsafe
   if (!session) throw new Error("You must be logged in");
